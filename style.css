@@ -1,0 +1,40 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:darkslategrey;
+    color: aliceblue;
+    display: grid;
+    height: 100vh;
+    place-content: center;
+}
+
+
+.container{
+    background-color: rgb(197, 223, 140);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    height: 70vh;
+    width: 90vh;
+    border-radius: 25px;
+}
+#answers{
+    display: grid;
+    grid-row-end: auto;
+
+}
+
+.btn{
+    height: 35px;
+    margin: 10px 0;
+    background-color: transparent;
+    border: 2px solid;
+}
+
+.btn:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+.btn:focus{
+    background-color:rgb(7, 192, 81);
+}
