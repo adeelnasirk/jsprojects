@@ -4,6 +4,8 @@ body{
     height: 120vh;
 
 }
+
+/* Navbar on desktop */
 .nav{
     background-color: black;
     color: #fff;
@@ -45,15 +47,16 @@ body{
     transform:rotate(180deg)
  }
 
-
- 
-
 .bar-icon{
     display: none;
 }
 
+/* End Navbar desktop 
+ */
 
 
+/* Navbar for tablets 
+ */
 @media (max-width:756px){
     .bar-icon{
         display: block;
@@ -91,7 +94,12 @@ body{
         width: 250px;
     }
 }
+/* End Navbar for tablets 
+ */
 
+
+/* Navbar for Mobile
+ */
 @media screen and (max-width:375px) {
     .links{
         display: flex;
@@ -106,8 +114,11 @@ body{
         opacity: 1;
     }
 }
+/* End Navbar for Mobile
+ */
 
-
+/* Navbar links drop down menu for desktops 
+ */
 .about-menu{
     position: fixed;
     top:60px;
@@ -126,4 +137,25 @@ body{
 
 .show{
     height: 50vh;
+}
+/*end Navbar links drop down menu 
+ */
+
+
+/*  Hero Section */
+/* Scroll Animation */
+
+.hero{
+    margin: 20px;
+    margin-top: 600px;
+    border:solid black;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    height: 500px;
+    width: 400px;
+    background-color: yellow;
+    border-radius: 25px;
+    transition: ease-in 2s;
 }
