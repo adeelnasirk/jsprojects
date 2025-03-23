@@ -16,6 +16,7 @@ body{
     top: 0;
     padding: 0 50px;
     height: 60px;
+    z-index: 999;
 }
 .nav a{
     color: #fff;
@@ -146,16 +147,45 @@ body{
 /* Scroll Animation */
 
 .hero{
-    margin: 20px;
+    
     margin-top: 600px;
-    border:solid black;
+    height: 100vh;
     display: flex;
     justify-content: center;
 }
 .box{
-    height: 500px;
-    width: 400px;
-    background-color: yellow;
+    height: 200px;
+    width: 200px;
+    background-color:black;
     border-radius: 25px;
-    transition: ease-in 2s;
+    transition: ease-in-out 0.5s;
+    transform: translateX(-100%);
+    opacity: 0;
+    z-index: 3;
+    margin: 1px;
+    transition-delay: 100ms;
+}
+
+.box:nth-child(2){
+    background-color: red;
+    transition-delay: 200ms;
+    transform: translateX(-200%);
+
+    z-index: 2;
+    
+    
+}
+
+.box:nth-child(3){
+    background-color: orange;
+    transition-delay: 300ms;
+    transform: translateX(-300%);
+    z-index: 1;
+    
+    
+}
+
+.show-box{
+    opacity: 1;
+    transform: translateX(0) !important;
 }
